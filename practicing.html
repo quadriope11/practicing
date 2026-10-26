@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style type="text/tailwindcss">
+        @theme {
+            --animate-marquee: marquee 500s linear infinite;
+            --breakpoint-xs: 30rem;
+            @keyframes marquee {
+              0% {
+                 transform: translateX(0%);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+            }
+        }
+        
+            
+    </style>
+</head>
+<body>
+    <div class="flex flex-row justify-between w-full items-center "> 
+        <h1 class="text-4xl uppercase font-medium text-black dark:text-white md:p-2 relative left-2 md:left-4">Faramade Fish</h1>
+        <div class="flex flex-col sm:bloock md:hidden relative ">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+        </div>
+            
+        <!-- <div class="border border-yellow-500">
+            <svg>
+                <image class="" href="/images/list.svg"/>
+            </svg>
+        </div> -->
+    
+        <nav class=" md:relative md:left-[-15px] lg:relative lg:left-[-250px] xl:relative xl:left-[-500px] space-x-2 hidden md:block">
+            <a href="/dashboard" class="font-b rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+               Home
+            </a>
+            <a href="/team" class="font-b rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+             Team
+            </a>
+            <a href="/projects" class="font-b rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+              Projects
+            </a>
+            <a href="/reports" class="font-b rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+             Reports
+            </a>
+        </nav-->
+        <button class="bg-[000000] text-white p-2 rounded-xl md:relative md:left-[15px] lg:relative lg:left-[250px] xl:relative xl:left-[400px]">Get your Fish</button>
+    </div>
+    <div class="flex flex-col md:flex-row">
+        <div class="space-y-2">
+            <h2 class="font-[monospace] text-sm text-gray-600 uppercase w-[220px] m-2 relative top-2 left-4 bg-[F7F2EB]">fresh / affordable / quality</h2>
+           <h2 class="text-4xl w-[300px] font-[Special] text-black relative left-4 top-2 sm:w-[400px] sm:text-4xl md:text-4xl md:w-[400px] lg:text-7xl lg:w-[500px] xl:text-7xl xl:w-[800px] relative xl:left-4" >Ocean-to-table seafood speacialist and delicacies</h2>
+           <h3 class="font-[shadows] text-md text-gray-500 w-[300px] relative left-2 top-2 sm:text-md sm:w-[400px] lg:text-xl lg:w-[500px] xl:text-3xl xl:w-[700px] relative lg:top-[20px] left-4 ">Welcome to Faramade Fish, your ultimate online destination for all things acquatic. A premier distributor of high-quality and responsibly seafood.</h3>
+           <button class="bg-[000000] text-white p-2 rounded-xl relative top-6 left-4 hidden sm:block md:block ">Open Now</button>
+           <div class="flex flex-col hidden sm:block md:block">
+            <svg class="w-8 h-8 relative left-30 top-[-20]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+            </svg>
+           </div>
+        </div>
+        <img class=" hidden min-[425px]:block min-[425px]:top-[-250px] min-[425px]:left-[300px] sm:block relative sm:left-[450px] sm:top-[-270px] md:top-[50px] md:block h-64 w-32 rounded-[100px] relative left-[70px] top-2  relative md:left-[20px] lg:h-[400px] lg:w-50 lg:rounded-[100px] relative  relative xl:left-[50px]  relative lg:left-[50px] " src="/images/gettyimages6.jpg" alt="frontfish Logo" />
+        <img class=" hidden min-[425px]:hidden sm:hidden md:block h-50 w-50 rounded-[300px] relative left-20 top-4 md:h-50 w-50 relative md:left-[30px] md:top-25  relative xl:left-[80px] xl:top-[250px] relative lg:left-[70px] lg:top-[250px]" src="/images/gettyimages-2.jpg" alt="frontfish logo" />
+        
+    </div>
+    </div>
+    <div class="grid grid-cols-1 place-items-center relative top-10 min-[425px]:top-[-200px] relative sm:top-[-200px]  p-4 gap-4 md:top-[100px] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-[F7F2EB] rounded-xl  ">
+       <div class="items-center rounded-xl bg-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500  size-60">
+           <div class="flex justify-center m-2">🐟</div>
+           <h4 class="flex justify-center m-2">Fresh, Quality Fish</h4>
+           <p class="flex justify-center p-6">
+             We focus on providing quality fish that
+             meets your expectations, so you can shop
+             with confidence and enjoy every meal.
+            </p>
+        </div>
+
+        <div class="rounded-xl bg-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500  size-60">
+           <div class="flex justify-center m-2">💰</div>
+           <h4 class="flex justify-center m-2">Affordable Prices</h4>
+           <p class="flex justify-center p-6">
+             Enjoy great value for your money with
+             prices designed to help you get quality
+             fish without stretching your budget.
+            </p>
+        </div>
+
+        <div class="rounded-xl  bg-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500  size-60">
+           <div class="flex justify-center m-2">🚚</div>
+           <h4 class="flex justify-center m-2">Convenient Ordering</h4>
+           <p class="flex justify-center p-6">
+             Ordering your fish should be easy.
+             Contact us to place your order and
+             discuss available delivery options.
+            </p>
+        </div>
+
+        <div class="rounded-xl bg-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500  size-60">
+           <div class="flex justify-center m-2">💰</div>
+           <h4 class="flex justify-center m-2">Affordable Prices</h4>
+           <p class="flex justify-center p-6">
+             Enjoy great value for your money with
+             prices designed to help you get quality
+             fish without stretching your budget.
+            </p>
+        </div>
+
+        <div class="rounded-xl bg-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500  size-60">
+           <div class="flex justify-center m-2">💰</div>
+           <h4 class="flex justify-center m-2">Affordable Prices</h4>
+           <p class="flex justify-center p-6">
+             Enjoy great value for your money with
+             prices designed to help you get quality
+             fish without stretching your budget.
+            </p>
+        </div>
+
+        <div class=" rounded-xl bg-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white-500  size-60">
+           <div class="flex justify-center m-2">💰</div>
+           <h4 class="flex justify-center m-2">Affordable Prices</h4>
+           <p class="flex justify-center p-6">
+             Enjoy great value for your money with
+             prices designed to help you get quality
+             fish without stretching your budget.
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-col sm:flex-row">
+        <div class="flex flex-col gap-2 md:justify-start ">
+          <p class=" hidden sm:block relative sm:top-[-200px] md:block lg:block text-lg font-italic text-red-500 p-2 relative md:top-[120px] md:left-4">OUR SERVICES</p>
+          <h5 class=" hidden sm:block md:block sm:top-[-200px] sm:w-[250px] lg:block text-4xl italic p-2 relative md:left-4 md:top-[100px] md:w-[230px]">From concept to delivery</h5>
+        </div>
+        <h6 class="w-[300px] italic text-2xl relative left-4 top-[40px] items-center min-[425px]:top-[-180px] min-[425px]:left-[100px] sm:top-[-180px] sm:left-20 md:w-[400px]  relative md:left-[100px] md:top-[140px] lg:w-[600px] xl:w-[700px] xl:left-[300px]">We offer a wide range of services to meet your fish needs. Common fish varieties available in our local market and includes Kote,Sawa,Panla,Catfish.</h6>
+    </div>
+    <div class="relative top-[50px] min-[425px]:top-[-130px] sm:top-[-150px] lg:top-[120px] md:top-[140px]  flex flex-row place-items-center gap-4 md:flex-row md:flex overflow-x-hidden gap-2">
+       <div class="animate-marquee flex gap-4 whitespace-nowrap">
+          <div class=" rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-1.jpg)] bg-cover bg-center md:h-60 "></div>
+          <div class="rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-2.jpg)] bg-cover bg-center md:h-60 "></div>
+          <div class=" rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-3.jpg)] bg-cover bg-center md:h-60   "></div>
+          <div class="rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-4.jpg)] bg-cover bg-center md:h-60 md:"></div>
+          <div class=" rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-5.jpg)] bg-cover bg-center md:h-60 md:"></div>
+          <div class=" rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-6.jpg)] bg-cover bg-center md:h-60 md "></div>
+          <div class="rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-7.jpg)] bg-cover bg-center md:h-60 "></div>
+          <div class="rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-8.jpg)] bg-cover bg-center md:h-60 "></div>
+          <div class="rounded-xl relative  h-60 w-64 bg-[url(/images/istockphoto-9.jpg)] bg-cover bg-center md:h-60   "></div>
+          <div class="rounded-xl ,n relative  h-60 w-64 bg-[url(/images/istockphoto-10.jpg)] bg-cover bg-center md:h-60 md:"></div>
+       </div>
+    </div>
+
+</body>
+</html>
